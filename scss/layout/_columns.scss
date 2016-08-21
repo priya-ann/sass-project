@@ -1,0 +1,22 @@
+.airways{
+	li {
+	  text-align: justify;
+	  list-style: disc;
+	}
+	ul{
+  	  margin: 0 30px; 
+	}
+
+}
+
+.author {
+	padding-bottom: 20px;
+  	border-bottom: 1px solid $color-prim;
+}
+
+.profile-photo {
+  display: block;
+  max-width: 150px;
+  margin: 0 auto 30px;
+  border-radius: 100%;
+}

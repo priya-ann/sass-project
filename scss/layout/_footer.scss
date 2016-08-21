@@ -1,0 +1,10 @@
+.main-footer {
+  @extend %centered;
+  padding-bottom: 20px;
+  border-bottom: 10px solid $color-prim;
+
+  @media (#{$break-narrow}) {
+    padding: 20px 0;
+  }
+}
+

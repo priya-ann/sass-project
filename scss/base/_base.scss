@@ -1,0 +1,54 @@
+/* Base Styles -------------------- */
+
+* {
+  box-sizing: border-box;
+}
+
+body { 
+  @include text(1.3em, 1.5, $color: $color-text-dark);
+  @extend %centered;
+  font-family: $josefin-font-stack;
+  margin: 0;
+}
+
+h1,
+h2 {
+  font-family: $josefin-font-stack;
+}
+
+h2 {
+  @include text(2em, 1.2, bold, $color-text-heading);
+  text-transform: uppercase;
+  margin: 0 0 .5em;
+  padding-top: 100px;
+  padding-bottom: 20px;  
+  border-bottom: 1px solid $color-prim;
+
+  @media (#{$break-narrow}) {
+   font-size: 1.8em;
+  }
+}
+
+h3 {
+  @include text(1.25em, 1.2, $color: $color-text-heading);
+}
+
+img {
+  max-width: 100%;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+a {
+  display: inline-block;
+  padding: 10px;
+  width: 200px;
+  height: 50px;
+  color: $color-text-light;
+  font-weight: bold; 
+  border-radius: 10px;
+  background-color: $color-text-heading;  
+  text-decoration: none;
+}
+
+

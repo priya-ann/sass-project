@@ -1,0 +1,15 @@
+.main-header {
+  @extend %centered;	
+  border-top: 5px solid $color-prim;
+  padding-top: 150px;
+  background: linear-gradient(to top, rgba(0,0,255,0), rgba(0,0,255,0.6)),
+             url('#{$image-path}/venice.jpg') no-repeat center;
+  background-size: cover;
+  height: 600px;
+  color: $color-text-light;
+
+  @media (#{$break-narrow}) {
+    max-height: 400px;
+    padding: 50px 25px 0;
+  }
+}
