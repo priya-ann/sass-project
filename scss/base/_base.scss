@@ -7,48 +7,51 @@
 body { 
   @include text(1.3em, 1.5, $color: $color-text-dark);
   @extend %centered;
+  @extend %margin-none;
   font-family: $josefin-font-stack;
-  margin: 0;
+  
+  @media (#{$break-narrow-max}) and (#{$break-narrow-max}) {
+   font-size: 1.1em;
+  }
+  @media (#{$break-mobile}) {
+    font-size: 1.3em;
+  }
 }
 
-h1,
 h2 {
-  font-family: $josefin-font-stack;
-}
-
-h2 {
-  @include text(2em, 1.2, bold, $color-text-heading);
+  @include text(1.5em, 1.2, bold, $color-text-heading);
   text-transform: uppercase;
   margin: 0 0 .5em;
-  padding-top: 100px;
+  padding-top: 50px;
   padding-bottom: 20px;  
   border-bottom: 1px solid $color-prim;
 
-  @media (#{$break-narrow}) {
-   font-size: 1.8em;
+  @media (#{$break-narrow-min}) {
+   font-size: 2em;
+   padding-top: 100px;
   }
+
 }
 
 h3 {
   @include text(1.25em, 1.2, $color: $color-text-heading);
+  @extend %margin-none;
+ 
+  @media (#{$break-narrow-max}) and (#{$break-narrow-max}) {
+   font-size: 1.1em;
+  }
+  @media (#{$break-mobile}) {
+    font-size: 1.25em;
+  }
 }
 
 img {
-  max-width: 100%;
+  width: 100%;
+  height: 100%;
   margin-bottom: 20px;
   border-radius: 10px;
 }
 
-a {
-  display: inline-block;
-  padding: 10px;
-  width: 200px;
-  height: 50px;
-  color: $color-text-light;
-  font-weight: bold; 
-  border-radius: 10px;
-  background-color: $color-text-heading;  
-  text-decoration: none;
-}
+
 
 

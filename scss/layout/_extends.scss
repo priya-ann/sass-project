@@ -2,10 +2,14 @@
 	text-align: center;
 }
 
+%margin-none {
+	margin: 0;
+}
+
 %clearfix {
-  &:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
+	&:after {
+	content: "";
+	display: table;
+	clear: both;
+	}
 }
