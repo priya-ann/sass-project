@@ -1,10 +1,22 @@
 .wrapper {
-  max-width: 940px;
+  max-width: 1040px;
   margin: 0 auto;
-  padding: 0 5%;
+  padding: 0 3%;
 
   p {
   	text-align: justify;
   }
+}
+
+.section-container{
+	margin-top:40px;	
+	&:last-of-type {
+    	padding-bottom: 20px;
+  		border-bottom: 1px solid $color-prim;
+  	}
+
+  	@media (#{$break-narrow-min}) {
+  		margin-top:50px;
+  	}
 }
 
